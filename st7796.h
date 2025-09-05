@@ -220,8 +220,7 @@ typedef enum {
 
 void st7796_init();
 void set_window_color(uint16_t xs, uint16_t xe, uint16_t ys, uint16_t ye, uint16_t color);
-//void print_fonts_char(sFONT font,uint16_t startX,uint16_t startY,char a,uint16_t color,uint16_t bg_color);
-//void write_string(sFONT font,char a[],uint16_t startX,uint16_t startY,uint16_t color,uint16_t bg_color);
+
 void V_line(uint16_t startX,uint16_t startY,uint16_t lenght,uint16_t width,uint16_t color);
 void H_line(uint16_t startX,uint16_t startY,uint16_t lenght,uint16_t width,uint16_t color);
 void print_image( uint8_t* image,uint16_t xs, uint16_t xe, uint16_t ys, uint16_t ye);
@@ -234,10 +233,6 @@ void st7796_command(uint8_t cmd);
 void st7796_write_data(uint8_t* data, uint32_t size);
 
 
-/*void ILI9488_Init(void);
-void setAddrWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
-void ILI9341_Fill_Screen(uint16_t Colour);
-void ILI9341_Draw_Colour(uint16_t Colour);
-void setRotation(uint8_t r);*/
+
 
 #endif /* INC_ST7796_H_ */
